@@ -30,6 +30,15 @@ cookieSuser(db,app)
 var getPostion = require('./getPositon.js')
 // 调用 getPostion暴露 的 方法
 getPostion(db,app,url)
+// 调用 更新简历  的 模块
+var update = require('./updateDate.js')
+// 调用 更新简历 暴露 的 方法
+update(db,app)
+// 调用 获取简历  的 模块
+var getResumeDate = require('./getResumeDate')
+// 调用 获取简历 暴露 的 方法
+getResumeDate(db,app)
+
 
 
 // 监听8080端口
